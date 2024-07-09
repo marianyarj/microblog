@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block conteudo %}
+<h2>Hello, {{ nome }}</h2>
+
+<ul>
+    {% for chave, valor in dados.items() %}
+    <li>
+        {{ chave }}: {{ valor }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
